@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>FoS Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="mines.css">
+
+</head>
+<body>
+
+<div id="photo-container">
+     <h1 id="loading-text">
+        <span>H</span><span>A</span><span>C</span><span>K</span>
+    </h1>
+    <div id="progressbar">  <!-- Новый линейный индикатор загрузки -->
+        <div id="loading"></div>
+    </div>
+    <img id="loaded-image" src="" alt="Loaded Image">
+</div>
+<div id="overlay" style="display:none;"></div>
+<img class="numbs" src="images/numb1.png">
+<div id="counter-container">
+    <!-- Иконка '+' для увеличения количества -->
+    <img class="control-button icon" src="images/minus.png" onclick="decrement()" alt="Minus">
+    <span id="count" class="count-display">1</span>
+    <!-- Исправлено: Иконка '+' теперь отвечает за функцию 'decrement()' -->
+    <img class="control-button icon" src="images/plus.png" onclick="increment()" alt="Plus">
+    
+
+
+</div>
+<button class="control-button photo-button" onclick="loadRandomPhoto()">GET SIGNAL</button>
+
+    <script src="mines.js"></script>
+</body>
+</html>
